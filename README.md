@@ -38,7 +38,7 @@ All endpoints enforce mutual TLS (mTLS). State transitions require cryptographic
 
 ---
 *Architected for entities requiring absolute precision and capital efficiency.*
-```
+
 
 ### References
 
