@@ -6,6 +6,21 @@
 ## System Architecture Overview
 Aurelius Protocol provides sovereign entities and institutional allocators with a cryptographically secure, low-latency environment for the tokenization of illiquid assets and the extraction of deterministic yield. The infrastructure decouples high-frequency I/O operations from ACID-compliant state transitions, ensuring zero downtime and absolute ledger integrity.
 
+## Project Structure
+```
+aurelius-protocol/
+├── frontend/
+│   └── index.html
+├── backend/
+│   ├── python/
+│   │   └── main.py
+│   └── java/
+│       └── SettlementEngine.java
+├── infra/
+│   └── cdk.ts
+└── README.md
+```
+
 ## Core Capabilities
 - **T+0 Settlement Engine:** Java-based microservice utilizing optimistic locking and strict transactional boundaries to process asset transfers with sub-millisecond ledger finality.
 - **High-Frequency Data Ingestion:** Python FastAPI asynchronous WebSocket gateway capable of sustaining 10,000+ concurrent connections with 4Hz telemetry updates.
